@@ -32,7 +32,7 @@ L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(myMap);
 // get earthquake data
-let queryUrl = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week.geojson"
+let queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week.geojson"
 // perform d3 to query URL
 d3.json(queryUrl).then(function(data){
     console.log(data.features[0]);
